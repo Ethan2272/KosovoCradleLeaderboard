@@ -10,24 +10,38 @@ body {
 }
 
 h1 {
-    margin: 5%;
+    margin-top: 1.5vw;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
 }
 
-.leaderboard {
+.leaderboard-wrapper {
     margin: auto;
     width: 45vw;
     text-align: center;
 }
 
-ol {
-    list-style-type: decimal;
+.leaderboard-wrapper p, ol {
     padding: 10px;
-    border-radius: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #757fa4;
     background-color: #2c303d;
+}
+
+.leaderboard-wrapper p {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 700;
+    padding: 2%;
+}
+
+.leaderboard-wrapper ol {
+    list-style-type: decimal;
+    border-radius: 5%;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-ol li {
+.leaderboard-wrapper ol li {
     color: #eef0ff;
     margin: 5%;
 }
