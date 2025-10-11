@@ -1,0 +1,33 @@
+* {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+
+body {
+    background-color: #121516;
+    color: #eef0ff;
+    /* text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
+}
+
+h1 {
+    margin: 5%;
+}
+
+.leaderboard {
+    margin: auto;
+    width: 45vw;
+    text-align: center;
+}
+
+ol {
+    list-style-type: decimal;
+    padding: 10px;
+    border-radius: 5%;
+    background-color: #2c303d;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+ol li {
+    color: #eef0ff;
+    margin: 5%;
+}
