@@ -24,7 +24,7 @@ public class PlayerController {
         return repository.findAll();
     }
 
-    @PostMapping("/employees")
+    @PostMapping("/players")
     Player newPlayer(@RequestBody Player newPlayer) {
         return repository.save(newPlayer);
     }
