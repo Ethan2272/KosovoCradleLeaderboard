@@ -21,7 +21,7 @@ h1 {
     text-align: center;
 }
 
-.leaderboard-wrapper p, ol {
+.leaderboard-wrapper p, table {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
@@ -35,13 +35,63 @@ h1 {
     padding: 2%;
 }
 
-.leaderboard-wrapper ol {
-    list-style-type: decimal;
-    border-radius: 5%;
+.leaderboard-wrapper table, td {
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-.leaderboard-wrapper ol li {
     color: #eef0ff;
     margin: 5%;
+}
+
+/* .leaderboard-wrapper th {
+    border: 10px white;
+} */
+
+.leaderboard-wrapper table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ranking {
+    width: 3vw;
+}
+
+.name {
+    width: 15vw;
+}
+
+.country {
+    width: 12vw;
+}
+
+.height {
+    width: 7vw;
+}
+
+.subs {
+    width: 3vw;
+}
+
+.leaderboard-wrapper label {
+    display: block;
+}
+
+.leaderboard-wrapper button {
+    background-color: #303134;
+    border: solid;
+    border-width: 1px;
+    border-color: #5f6368;
+    color: #e8eaed;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .leaderboard-wrapper {
+        margin: auto;
+        width: 90vw;
+        text-align: center;
+    }
 }
