@@ -14,18 +14,20 @@
         <ol id="leaderboard">
             <button>Add New Player</button>
             <br></br>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname">
-            <br></br>
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname">
-            <br></br>
-            <label for="country">Country:</label>
-            <input type="text" id="country" name="country">
-            <br></br>
-            <label for="height">Height:</label>
-            <input type="text" id="height" name="height">
-            <br></br>
+            <form action="/players">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" pattern="^[a-zA-Z]+$" title="Letters only">
+                <br></br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" pattern="^[a-zA-Z]+$" title="Letters only">
+                <br></br>
+                <label for="countryCode">Country:</label>
+                <input type="text" name="countryCode" pattern="^[a-zA-Z]{2}$" title="Make sure this is a two letter country code">
+                <br></br>
+                <label for="heightInInches">Height:</label>
+                <input type="text" name="heightInInches" pattern="^\d+$" title="Digits only, this is the height in inches">
+                <br></br>
+            </form>
             <il>Kanye West (0)</il> <button>-</button><button>+</button> <button>Save</button>
         </ol>
     </div>
