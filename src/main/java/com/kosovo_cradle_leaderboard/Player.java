@@ -54,4 +54,8 @@ public class Player {
         return countryCode;
     }
 
+    public int getHeightInInches() {
+        return heightInInches;
+    }
+
 }

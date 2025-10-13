@@ -2,34 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="admin.js"></script>
     <title>Admin - KCL</title>
 </head>
 <body>
-    <h1>ADMIN PAGE</h1>
-    <hr></hr>
-    <div class="leaderboard-wrapper">
-        <ol id="leaderboard">
-            <button>Add New Player</button>
-            <br></br>
-            <form action="/players">
+    <nav>
+        <h1>ADMIN PAGE</h1>
+    </nav>
+    <div class="content-wrapper">
+            <form action="/players" method="POST">
                 <label for="firstName">First Name:</label>
-                <input type="text" name="firstName" pattern="^[a-zA-Z]+$" title="Letters only">
+                <input type="text" name="firstName" id="firstName" pattern="^[a-zA-Z]+$" title="Letters only">
                 <br></br>
                 <label for="lastName">Last Name:</label>
-                <input type="text" name="lastName" pattern="^[a-zA-Z]+$" title="Letters only">
+                <input type="text" name="lastName" id="lastName" pattern="^[a-zA-Z]+$" title="Letters only">
                 <br></br>
                 <label for="countryCode">Country:</label>
-                <input type="text" name="countryCode" pattern="^[a-zA-Z]{2}$" title="Make sure this is a two letter country code">
+                <input type="text" name="countryCode" id="countryCode" pattern="^[a-zA-Z]{2}$" title="Make sure this is a two letter country code">
                 <br></br>
                 <label for="heightInInches">Height:</label>
-                <input type="text" name="heightInInches" pattern="^\d+$" title="Digits only, this is the height in inches">
+                <input type="text" name="heightInInches" id="heightInInches" pattern="^\d+$" title="Digits only, this is the height in inches">
                 <br></br>
+            <button>Add New Player</button>
             </form>
-            <il>Kanye West (0)</il> <button>-</button><button>+</button> <button>Save</button>
-        </ol>
+
+            <div id="leaderboard-wrapper">
+                <table>
+                    <tr id="test">
+                        <th class="ranking">Ranking</th>
+                        <th class="name">Name</th>
+                        <th class="country">Country</th>
+                        <th class="height">Height</th>
+                        <th class="subs"># of Submissions</th>
+                    </tr>
+                    <tr>
+                        <td class="ranking">1</td>
+                        <td class="name">Maria Anders</td>
+                        <td class="country">DE</td>
+                        <td class="height">62</td>
+                        <td class="subs">6 <button>-</button><button>+</button> <button>Save</button></td>
+                    </tr>
+                </table> 
+            </div>
     </div>
 </body>
 </html>
