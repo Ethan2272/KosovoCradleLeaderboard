@@ -3,13 +3,13 @@ window.addEventListener("load", async () => {
     const response = await fetch('/players');
     const players = await response.json();
 
-    players.forEach(player => {
+    players.forEach((player, index) => {
 
         console.log(player)
         const listItem = document.createElement("tr");
 
         const rankTd = document.createElement("td");
-        rankTd.textContent = 0;
+        rankTd.textContent = index + 1;
         listItem.appendChild(rankTd);
 
         const nameTd = document.createElement("td");

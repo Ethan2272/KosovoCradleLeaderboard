@@ -3,11 +3,10 @@ package com.kosovo_cradle_leaderboard;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -25,7 +24,7 @@ public class PlayerController {
     }
 
     @PostMapping("/players")
-    Player newPlayer(@RequestBody Player newPlayer) {
+    Player newPlayer(@ModelAttribute Player newPlayer) {
         return repository.save(newPlayer);
     }
 
